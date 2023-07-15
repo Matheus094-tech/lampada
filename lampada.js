@@ -1,4 +1,4 @@
-const ligar = document.getElementById('liga');
+/* const ligar = document.getElementById('liga');
 const desligar = document.getElementById('desliga');
 const lampada = document.getElementById('lampada');
 
@@ -26,4 +26,13 @@ ligar.addEventListener( 'click', lampadaLigada );
 desligar.addEventListener( 'click', lampadaDesligada );
 lampada.addEventListener( 'mouseover', lampadaLigada);
 lampada.addEventListener( 'mouseleave', lampadaDesligada);
-lampada.addEventListener( 'dblclick', lampadaQuebrada);
+lampada.addEventListener( 'dblclick', lampadaQuebrada); */
+
+let button = document.getElementById('no');
+let height = window.innerHeight - 50;
+let width = window.innerWidth - 50;
+
+button.addEventListener('mouseover', function () {
+button.style.position = "absolute";
+button.style.top = Math.random() * height + "px";
+button.style.left = Math.random() * width + "px";
